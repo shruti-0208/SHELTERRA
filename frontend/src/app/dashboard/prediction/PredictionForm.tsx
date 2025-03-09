@@ -56,7 +56,7 @@ export default function PredictionForm({ onPrediction }: { onPrediction: (predic
     console.log("📤 Sending Data:", processedData); // ✅ Log Data Before Sending
   
     try {
-      const response = await axios.post("https://shelterra-wugu.onrender.com/api/predict, processedData);
+      const response = await axios.post("https://shelterra-wugu.onrender.com/api/predict", processedData);
 
       
       console.log("✅ Response Received:", response.data); // ✅ Log Response
