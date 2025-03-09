@@ -75,3 +75,5 @@ signin/signup to begin
 search ->  https://shelterra-1.onrender.com/dashboard
 
 Enter Input -> fill the form
+
+(!!Predict output will show error : "Failed to process Prediction" => if sensors are not connected!!)
