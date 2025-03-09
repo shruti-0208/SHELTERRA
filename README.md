@@ -47,7 +47,7 @@ Users get alerts and warnings based on real-time analysis.
 
 ✅ Real-time sensor data collection
 
-✅ AI-based risk prediction
+✅ ML modelling-based risk prediction
 
 ✅ User-friendly dashboard
 
