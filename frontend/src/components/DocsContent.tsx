@@ -18,37 +18,28 @@ export default function DocsContent() {
       {showContent && (
         <div className="mt-4 p-4 border border-gray-300 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-900 shadow-md w-full max-w-3xl">
           <h2 className="text-xl font-bold">
-            Land Suitability Analysis for Safe Construction using AI and IoT
+            Land Suitability Analysis for Safe Construction using ML Model
           </h2>
           <p className="mt-2">
-            <strong>Problem Statement:</strong> Unstable land conditions pose a significant risk to construction projects, leading to structural failures, landslides, and property loss...
+            This system assesses the safety of hilly areas for construction by analyzing various environmental and geological factors.
           </p>
 
-          <h3 className="mt-4 font-semibold">Objectives:</h3>
+          <h3 className="mt-4 font-semibold">Key Parameters Analyzed:</h3>
           <ul className="list-disc list-inside">
-            <li>Monitor land elevation changes using satellite/drone data.</li>
-            <li>Detect real-time slope instability, soil moisture levels, and vibrations using sensors.</li>
-            <li>Issue warnings and alerts on potential landslide risks.</li>
-            <li>Provide recommendations on safe construction limits.</li>
-            <li>Enhance risk prediction accuracy with machine learning.</li>
-            <li>Implement blockchain for secure and verifiable land records.</li>
-            <li>Collaborate with government bodies for large-scale deployment.</li>
+            <li><strong>Rainfall (mm):</strong> Measures precipitation levels affecting soil stability.</li>
+            <li><strong>Slope Angle:</strong> Evaluates the steepness of the terrain.</li>
+            <li><strong>Soil Saturation:</strong> Determines water content in the soil, influencing landslide risks.</li>
+            <li><strong>Vegetation Cover:</strong> Assesses the presence of vegetation that stabilizes the land.</li>
+            <li><strong>Earthquake Activity:</strong> Monitors seismic movements that may impact structural safety.</li>
+            <li><strong>Proximity to Water Bodies:</strong> Identifies risks associated with nearby rivers, lakes, or groundwater.</li>
+            <li><strong>Soil Type:</strong> Classifies the land based on gravel, sand, and silt composition.</li>
           </ul>
 
-          <h3 className="mt-4 font-semibold">Features:</h3>
+          <h3 className="mt-4 font-semibold">How It Works:</h3>
           <ul className="list-disc list-inside">
-            <li>
-              <strong>IoT-Based Land Monitoring:</strong> Real-time data collection, wireless transmission, cloud storage.
-            </li>
-            <li>
-              <strong>AI-Powered Risk Assessment:</strong> Machine learning models, historical trend analysis.
-            </li>
-            <li>
-              <strong>Web & Mobile Dashboard:</strong> Google Maps API, data visualization, push notifications.
-            </li>
-            <li>
-              <strong>Advanced Features:</strong> Drone-based LiDAR mapping, blockchain, government collaboration.
-            </li>
+            <li><strong>ML Model:</strong> Analyzes environmental data to predict landsafety.</li>
+            <li><strong>User Dashboard:</strong> Provides visual insights on safety levels.</li>
+            <li><strong>Alert System:</strong> Notifies users if the area is unsafe for construction.</li>
           </ul>
         </div>
       )}
