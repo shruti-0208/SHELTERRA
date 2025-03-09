@@ -9,7 +9,7 @@ We have developed a hardware-software integrated system that analyzes land stabi
 
 🛠️ Tech Stack & Implementation
 
-🔹 Hardware Components
+🔹 Hardware Components (connected through usb)
 
 💧 Water Sensor → Checks soil moisture level (Soil Saturation)
 
