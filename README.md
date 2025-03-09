@@ -35,3 +35,14 @@ Users get alerts and warnings based on real-time analysis.
 ✅ Cloud-based MongoDB storage
 
 google drive link:https://drive.google.com/drive/folders/1-J-QJX_FJ1uL6B3zufM59cavrkv2QM-t
+
+rendor deployment url :
+backend :  https://shelterra-wugu.onrender.com
+frontend :  https://shelterra-1.onrender.com
+ml model :  https://shelterra-2.onrender.com
+
+To browse webpage :
+websearch ->  https://shelterra-1.onrender.com
+signin/signup to begin 
+search ->  https://shelterra-1.onrender.com/dashboard
+Enter Input -> fill the form
