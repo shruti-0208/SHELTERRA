@@ -1,14 +1,14 @@
 {
-  "name": "landsafe",
+  "name": "sheltterra",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/shruti-0208/landsafe#readme",
+  "homepage": "https://github.com/shruti-0208/SHELTERRA#readme",
   "bugs": {
-    "url": "https://github.com/shruti-0208/landsafe/issues"
+    "url": "https://github.com/shruti-0208/SHELTERRA/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shruti-0208/landsafe.git"
+    "url": "git+https://github.com/shruti-0208/SHELTERRA.git"
   },
   "license": "ISC",
   "author": "",
