@@ -68,9 +68,15 @@ export default function PredictionForm({ onPrediction }: { onPrediction: (predic
         setError("Unexpected response from the server.");
       }
     } catch (error) {
-      console.error("❌ Error fetching prediction:", error);
-      setError(error.response?.data?.error || "❌ Failed to fetch prediction. Please try again.");
-    } finally {
+  console.error("❌ Error fetching prediction:", error);
+  
+  if (axios.isAxiosError(error) && error.response?.data?.error) {
+    setError(error.response.data.error);
+  } else {
+    setError("❌ Failed to fetch prediction. Please try again.");
+  }
+}
+ finally {
       setLoading(false);
     }
   };
