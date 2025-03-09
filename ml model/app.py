@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 import pandas as pd
 import joblib
+import os 
 
 app = Flask(__name__)
 
@@ -15,7 +16,7 @@ def home():
 def predict():
     try:
         data = request.get_json()
-        print("📥 Incoming Request from Express:", data)  # ✅ Log Data from Express
+        print("📥 Incoming Request from Express:", data)  #  Log Data from Express
 
         df = pd.DataFrame([data])
 
@@ -29,13 +30,14 @@ def predict():
 
         prediction = model.predict(df)
 
-        print("✅ Prediction Result:", prediction[0])  # ✅ Log Prediction Result
+        print("✅ Prediction Result:", prediction[0])  #Log Prediction Result
         return jsonify({"prediction": int(prediction[0])})
 
     except Exception as e:
-        print("❌ Flask Error:", str(e))  # ✅ Log Error Details
+        print("❌ Flask Error:", str(e))  # Log Error Details
         return jsonify({"error": str(e)}), 500
 
-
+# ✅ Port Binding Fix for Render Deployment
 if __name__ == "__main__":
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Get PORT from environment variable
+    app.run(debug=True, host="0.0.0.0", port=port)  # Bind to correct port
