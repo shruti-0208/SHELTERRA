@@ -56,7 +56,7 @@ export default function PredictionForm({ onPrediction }: { onPrediction: (predic
     console.log("📤 Sending Data:", processedData); // ✅ Log Data Before Sending
   
     try {
-      const response = await axios.post("http://127.0.0.1:4000/api/predict", processedData);
+      const response = await axios.post("https://shelterra-wugu.onrender.com/api/predict, processedData);
 
       
       console.log("✅ Response Received:", response.data); // ✅ Log Response
@@ -67,7 +67,7 @@ export default function PredictionForm({ onPrediction }: { onPrediction: (predic
       } else {
         setError("Unexpected response from the server.");
       }
-    } catch (error: any) {
+    } catch (error) {
       console.error("❌ Error fetching prediction:", error);
       setError(error.response?.data?.error || "❌ Failed to fetch prediction. Please try again.");
     } finally {
