@@ -4,6 +4,9 @@ const Prediction = require("../models/Prediction");
 
 const router = express.Router();
 
+// ✅ ML Model API URL (Render Flask API)
+const mlApiUrl = "https://shelterra-2.onrender.com/mlmodel"; //  Updated with actual Render URL
+
 // Route to store data and send it to the ML model
 router.post("/", async (req, res) => {
   try {
@@ -20,8 +23,7 @@ router.post("/", async (req, res) => {
 
     console.log("📡 Sending Data to Flask:", requestData); // ✅ Log Data Sent to Flask
 
-    // Send data to Flask Model
-    const mlApiUrl = "http://127.0.0.1:5000/mlmodel";
+    // ✅ Send data to Flask Model (Render API)
     const response = await axios.post(mlApiUrl, requestData);
 
     console.log("✅ Flask Response:", response.data); // ✅ Log Flask Response
@@ -40,8 +42,6 @@ router.post("/", async (req, res) => {
     return res.status(500).json({ error: "Failed to process prediction" });
   }
 });
-
-
 
 // Route to get all predictions from MongoDB
 router.get("/", async (req, res) => {
