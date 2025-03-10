@@ -76,7 +76,7 @@ search ->  https://shelterra-1.onrender.com/dashboard
 
 Enter Input -> fill the form
 
-(!!Predict output will show error : "Failed to process Prediction" => if sensors are not connected!!)
+(‼️Predict output will show error : "Failed to process Prediction" => if sensors are not connected‼️)
 
 
 ![Screenshot 2025-03-09 091817](https://github.com/user-attachments/assets/09b19db6-a428-4137-bdbd-e060325131c7)
